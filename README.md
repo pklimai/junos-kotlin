@@ -39,6 +39,7 @@ to add an example to this repository, by the way!).
 - **parse_system_info.kt** - Read basic system information from a device.
 - **load_config.kt** - Load set-configuration on the device.
 - **CLI_command.kt** - Execute a CLI command (with some automatic connect/close via an extension function).
+- **list_interfaces_xpath.kt** - Read GE interfaces from a device.
 
 Note: we are using 2.0.0 version of java-netconf released in
 July 2019. It has some non-backwards-compatible 
