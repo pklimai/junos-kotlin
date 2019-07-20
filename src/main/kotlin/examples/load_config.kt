@@ -10,14 +10,14 @@ lab@vMX-1# show | compare rollback 1
 +      community kotlin-example;
 +  }
 
- */
+*/
 
 import net.juniper.netconf.Device
 
 // Device host name (or IP), login and password
-private val HOSTNAME = "10.254.0.41"
-private val USERNAME = "lab"
-private val PASSWORD = "lab123"
+private const val HOSTNAME = "10.254.0.41"
+private const val USERNAME = "lab"
+private const val PASSWORD = "lab123"
 
 fun main() {
     // Create a device instance
@@ -36,7 +36,6 @@ fun main() {
             return
         }
         loadSetConfiguration("set snmp community kotlin-example")
-
         commit()
         unlockConfig()
         close()

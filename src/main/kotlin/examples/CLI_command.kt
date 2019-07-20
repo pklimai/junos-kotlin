@@ -11,12 +11,12 @@ Example output:
                      Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
 Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
   0  Online           Testing  11         0       10     10     10    511        31          0
- */
+*/
 
 // Device host name (or IP), login and password
-private val HOSTNAME = "10.254.0.41"
-private val USERNAME = "lab"
-private val PASSWORD = "lab123"
+private const val HOSTNAME = "10.254.0.41"
+private const val USERNAME = "lab"
+private const val PASSWORD = "lab123"
 
 /*
   This extension function accepts a block of code and executes it on
@@ -33,7 +33,7 @@ fun Device.execute(block: Device.() -> Unit) {
 /*
   Build a simple device instance
  */
-fun buildDevice(host: String, user: String, passwd: String) = Device.builder()
+fun buildDevice(host: String, user: String, passwd: String): Device = Device.builder()
     .hostName(host)
     .userName(user)
     .password(passwd)

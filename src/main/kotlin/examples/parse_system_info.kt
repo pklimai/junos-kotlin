@@ -21,14 +21,14 @@ package examples
   Example program output:
   Model=vmx, OS=junos, Version=18.3R1.9, Hostname=vMX-1
 
- */
+*/
 
 import net.juniper.netconf.Device
 
 // Device host name (or IP), login and password
-private val HOSTNAME = "10.254.0.41"
-private val USERNAME = "lab"
-private val PASSWORD = "lab123"
+private const val HOSTNAME = "10.254.0.41"
+private const val USERNAME = "lab"
+private const val PASSWORD = "lab123"
 
 fun main() {
     // Create a device instance
@@ -44,13 +44,13 @@ fun main() {
         connect()
 
         // Send RPC and receive RPC reply as XML
-        val rpc_reply = executeRPC("get-system-information")
+        val rpcReply = executeRPC("get-system-information")
 
         // Extract data from XML document
-        val model = rpc_reply.findValue(listOf("system-information", "hardware-model"))
-        val osName = rpc_reply.findValue(listOf("system-information", "os-name"))
-        val osVer = rpc_reply.findValue(listOf("system-information", "os-version"))
-        val hostName = rpc_reply.findValue(listOf("system-information", "host-name"))
+        val model = rpcReply.findValue(listOf("system-information", "hardware-model"))
+        val osName = rpcReply.findValue(listOf("system-information", "os-name"))
+        val osVer = rpcReply.findValue(listOf("system-information", "os-version"))
+        val hostName = rpcReply.findValue(listOf("system-information", "host-name"))
 
         // Print device info
         println("Model=${model}, OS=${osName}, Version=${osVer}, Hostname=${hostName}")
