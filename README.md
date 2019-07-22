@@ -39,7 +39,7 @@ to add an example to this repository, by the way!).
 - **[ParseSystemInfo.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ParseSystemInfo.kt)** - Read basic system information from a device.
 - **[LoadConfig.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/LoadConfig.kt)** - Load set-configuration on the device.
 - **[ExecuteCommand.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ExecuteCommand.kt)** - Execute a CLI command (with some automatic connect/close via an extension function).
-- **[ListInterfacesXPpath.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ListInterfacesXPpath.kt)** - Read GE interfaces from a device.
+- **[ListInterfacesXPath.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ListInterfacesXPath.kt)** - Read GE interfaces from a device.
 
 Note: we are using 2.0.0 version of java-netconf released in
 July 2019. It has some non-backwards-compatible 
