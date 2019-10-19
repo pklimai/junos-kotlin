@@ -5,6 +5,7 @@ plugins {
 version '1.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -13,7 +14,9 @@ dependencies {
     implementation "com.jcraft:jsch:0.1.55"
     implementation "org.slf4j:slf4j-simple:1.7.12"
     implementation "org.hamcrest:hamcrest-all:1.3"
-    compile fileTree(dir: "..\\netconf-java\\target\\netconf-java-2.0.0.jar", include: ['*.jar'])
+    implementation "net.juniper.netconf:netconf-java:2.0.0"
+    // Instead of mavenLocal() and implementation, just use jar from specified directory:
+    // compile fileTree(dir: "..\\netconf-java\\target\\netconf-java-2.0.0.jar", include: ['*.jar'])
 }
 
 compileKotlin {

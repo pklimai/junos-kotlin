@@ -13,10 +13,7 @@ Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) 
   0  Online           Testing  11         0       10     10     10    511        31          0
 */
 
-// Device host name (or IP), login and password
-private const val HOSTNAME = "10.254.0.41"
-private const val USERNAME = "lab"
-private const val PASSWORD = "lab123"
+
 
 /*
   This extension function accepts a block of code and executes it on

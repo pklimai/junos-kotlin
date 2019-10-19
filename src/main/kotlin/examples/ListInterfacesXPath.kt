@@ -24,14 +24,9 @@ import net.juniper.netconf.Device
 import org.w3c.dom.NodeList
 import org.xml.sax.InputSource
 import java.io.StringReader
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathFactory;
-
-// Device host name (or IP), login and password
-private const val HOSTNAME = "10.254.0.41"
-private const val USERNAME = "lab"
-private const val PASSWORD = "lab123"
+import javax.xml.parsers.DocumentBuilderFactory
+import javax.xml.xpath.XPathConstants
+import javax.xml.xpath.XPathFactory
 
 fun main() {
     val device = Device.builder()

@@ -25,11 +25,6 @@ package examples
 
 import net.juniper.netconf.Device
 
-// Device host name (or IP), login and password
-private const val HOSTNAME = "10.254.0.41"
-private const val USERNAME = "lab"
-private const val PASSWORD = "lab123"
-
 fun main() {
     // Create a device instance
     val device = Device.builder()
