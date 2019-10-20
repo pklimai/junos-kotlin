@@ -1,4 +1,4 @@
-package examples
+package pklimai.junos.kotlin.examples
 
 /*
  This Kotlin example is similar to the following Java code:

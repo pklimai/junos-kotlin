@@ -1,8 +1,8 @@
 # Network automation using Kotlin programming language
 
-This repository contains a few examples of how you can automate 
+This repository contains a few pklimai.junos.kotlin.examples of how you can automate 
 network devices using Kotlin programming language. Specifically,
-in the provided examples, Junos OS-based devices and NETCONF
+in the provided pklimai.junos.kotlin.examples, Junos OS-based devices and NETCONF
 protocol are used.
 
 The Q&A below contains some more information.
@@ -35,11 +35,11 @@ demonstrated in this repository using Juniper Networks'
 Other protocols such as gRPC can also be used (you are welcome
 to add an example to this repository, by the way!). 
 
-## The following examples are currently available in src/main/kotlin/examples:
-- **[ParseSystemInfo.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ParseSystemInfo.kt)** - Read basic system information from a device.
-- **[LoadConfig.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/LoadConfig.kt)** - Load set-configuration on the device.
-- **[ExecuteCommand.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ExecuteCommand.kt)** - Execute a CLI command (with some automatic connect/close via an extension function).
-- **[ListInterfacesXPath.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/examples/ListInterfacesXPath.kt)** - Read GE interfaces from a device.
+## The following pklimai.junos.kotlin.examples are currently available in src/main/kotlin/pklimai.junos.kotlin.examples:
+- **[ParseSystemInfo.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/pklimai.junos.kotlin.examples/ParseSystemInfo.kt)** - Read basic system information from a device.
+- **[LoadConfig.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/pklimai.junos.kotlin.examples/LoadConfig.kt)** - Load set-configuration on the device.
+- **[ExecuteCommand.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/pklimai.junos.kotlin.examples/ExecuteCommand.kt)** - Execute a CLI command (with some automatic connect/close via an extension function).
+- **[ListInterfacesXPath.kt](https://github.com/pklimai/junos-kotlin/tree/master/src/main/kotlin/pklimai.junos.kotlin.examples/ListInterfacesXPath.kt)** - Read GE interfaces from a device.
 
 Note: we are using 2.0.0 version of java-netconf released in
 July 2019. It has some non-backwards-compatible 
